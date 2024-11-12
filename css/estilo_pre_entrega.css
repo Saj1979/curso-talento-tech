@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;      
+    
+}
+
+
+body{
+    font-family: "abel",sans-serif;
+}
+
+/*Estilos de la pagina principal*/
+
+.estudios{
+    width: 300px;
+    height: 200px;
+    padding: 0px;
+    border: 2px, groove;color: #488ae7;
+    margin: 50px;
+}
+.menu li a:hover{
+    background: hsl(167, 87%, 79%);
+    font-size: 1.5 em;
+
+}
+.flex_box{
+    display:flex;
+    justify-content:space-evenly;    
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.flex_items{
+    flex:1,1, auto;
+    margin: 10px;
+    padding: 20px;
+}
+.contenedor {   
+    background-image: url(../imagenes/fondo_de_pantalla.jpg);
+    background-size: cover;
+    background-position: center;      
+    
+    }
+
+
+ /* estilos de la pagina acerca de nosotros*/
+
+.contenedor_grid{ 
+    background-image: url(../imagenes/fondo_de_pantalla.jpg);
+    background-size: cover;
+    background-position: center;     
+    display: grid;
+    grid-template-columns: 1fr,1fr,1fr;
+    grid-template-rows: auto,10fr,auto;
+    gap: 20px;
+    font-size: 20px;
+
+
+}
+.header{
+    grid-column:1/2 ;
+    grid-row: 1/2;
+    
+}
+
+.main{
+    grid-column: 1/4;
+    grid-row: 2/3;
+
+}
+main h1, h2{
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+main p{
+    font-size: 1em;
+    font-style: italic;
+}
+.footer{
+    grid-column:1/4 ;
+    grid-row: 3/4;
+    position: fixed;
+    bottom: 50px;
+}
+   

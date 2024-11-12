@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../css/estilo_formulario.css">
+</head>
+<body>
+    <h1>Formulario de Contacto</h1>
+    <form action="https://formspree.io/f/mjkvgjzn" method="post"></form>
+    <fieldset>
+        <label for="Nombre y Apellido ">Nombre Y Apellido</label>
+        <input type="text">
+        <br>        
+        <br>
+        <label for="E-mail"> E-Mail</label>
+        <input type="email">
+        <br>
+        <br>
+        <label for="Elija una opción"> Elija una opcion</label>
+        <select name="Elija una opción" id="">
+            <option value="1">Empresa</option>
+            <option value="2">Paciente</option>
+        </select>
+        <br>
+        <br>
+        <label for="Consulta"> Ingrese su consulta</label>
+        <br>
+        <textarea name="Ingrese su consulta",rows="4", cols="50" id=""></textarea>
+    </fieldset>
+    <label for="opcion">No soy un robot</label>
+    <input type="checkbox", required >
+
+    <input type="submit">
+    <br>
+
+</body>
+</html>
