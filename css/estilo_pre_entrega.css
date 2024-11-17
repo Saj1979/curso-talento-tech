@@ -85,3 +85,9 @@ main p{
     bottom: 50px;
 }
    
+button{
+    font-size: 110%;
+    border: solid;color: #000;
+    background-color: rgb(9, 233, 99);
+    
+}
