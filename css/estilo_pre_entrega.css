@@ -4,7 +4,21 @@
     box-sizing: border-box;      
     
 }
-
+a{
+    font-size: 110%;
+    border: solid;color: #000;
+    background-color: rgb(9, 233, 99);
+    padding: 2px;
+    border: 1px solid;
+}
+a:hover{
+    background: #0f6cef;
+    color: black;
+    padding: 8px,14px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
 
 body{
     font-family: "abel",sans-serif;
@@ -36,12 +50,36 @@ body{
     flex:1,1, auto;
     margin: 10px;
     padding: 20px;
+    te
 }
 .contenedor {   
     background-image: url(../imagenes/fondo_de_pantalla.jpg);
     background-size: cover;
     background-position: center;      
     
+    }
+    .enlacesIndice {
+        list-style-type: none; 
+        padding: 0; 
+        margin: 0; 
+    }
+    
+    .enlacesIndice li {
+        margin-bottom: 10px; 
+    }
+    
+    .enlacesIndice a {
+        color:#488ae7;
+        text-decoration: none;
+        transition: color 0.3s;
+        -webkit-transition: color 0.3s;
+        -moz-transition: color 0.3s;
+        -ms-transition: color 0.3s;
+        -o-transition: color 0.3s;
+}
+    
+    .enlacesIndice a:hover {
+        color: hsl(167,hsl(167, 87%, 79%)); 
     }
 
 
@@ -81,13 +119,52 @@ main p{
 .footer{
     grid-column:1/4 ;
     grid-row: 3/4;
-    position: fixed;
+    
     bottom: 50px;
 }
+img{
+    border-style: solid 8 px;
+    border-color: blue;}
+
+
+    
+    
    
 button{
     font-size: 110%;
     border: solid;color: #000;
     background-color: rgb(9, 233, 99);
     
+}
+
+#carouselExampleFade {
+    width: 80%;
+    max-width: 800px; 
+    margin: auto; 
+  }
+  
+  .carousel-item img {
+    max-width: 100%; 
+    height: auto; 
+  }
+
+ .btn2{
+    align-items:center;
+ }
+
+ #checkout-modal {
+    display: none; /* Ocultar el modal por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+.checkout-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
 }

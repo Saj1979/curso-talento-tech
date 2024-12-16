@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CENTRAL DE TURNOS</title>
+    <link rel="stylesheet" href="../css/estilo_pre_entrega.css">
+</head>
+<body class="contenedor">
+    <head>
+        <div class="flex_box">
+            <div class="flex_items"><img src="../imagenes/logo1.png" alt="logo1" width="100" height="100"></div>
+            <div class="flex_items"><a href="../index.html">INICIO</a></div>
+            <div class="flex_items"><a href="nuestras_instalaciones.html">NUESTRAS INSTALACIONES</a></div>
+            <div class="flex_items"><a href="formulario.html">CONTACTO</a></div>
+        </div>
+    </head>
+    <h1>CENTRAL DE TURNOS</h1>
+    
+    <div id="turnos">
+        <div class="turno">
+            <span>Electrocardiograma - $5000</span>
+            <span>Stock: <span id="stock-electrocardiograma">10</span></span>
+            <button onclick="agregarAlCarrito('Electrocardiograma', 5000, 'electrocardiograma')">Agregar</button>
+        </div>
+        <div class="turno">
+            <span>Laboratorio - $6000</span>
+            <span>Stock: <span id="stock-laboratorio">10</span></span>
+            <button onclick="agregarAlCarrito('Laboratorio', 6000, 'laboratorio')">Agregar</button>
+        </div>
+        <div class="turno">
+            <span>Consulta - $3000</span>
+            <span>Stock: <span id="stock-consulta">10</span></span>
+            <button onclick="agregarAlCarrito('Consulta', 3000, 'consulta')">Agregar</button>
+        </div>
+    </div>
+
+    <div id="carrito">
+        <h2>TUS TURNOS</h2>
+        <ul id="lista-carrito"></ul>
+        <p>Subtotal: $<span id="subtotal-carrito">0.00</span></p>
+        <button onclick="mostrarCheckout()">Checkout</button>
+        <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+    </div>
+
+    <div id="checkout-modal" style="display:none;">
+        <h2>Resumen de Compra</h2>
+        <p>Subtotal: $<span id="modal-subtotal">0.00</span></p>
+        <p>Total: $<span id="modal-total">0.00</span></p>
+        <button onclick="realizarCompra()">Confirmar Compra</button>
+        <button onclick="cerrarCheckout()">Cancelar</button>
+    </div>
+
+    <script src="../js/turnero.js"></script>
+</body>
+</html>
